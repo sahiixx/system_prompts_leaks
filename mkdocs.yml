@@ -36,8 +36,6 @@ markdown_extensions:
 plugins:
   - search
 
-docs_dir: .
-
 nav:
   - Home: readme.md
   - Anthropic:
@@ -155,10 +153,3 @@ nav:
     - Raycast AI: Misc/Raycast-AI.md
     - Sesame AI Maya: Misc/Sesame-AI-Maya.md
     - Warp 2.0 Agent: Misc/Warp-2.0-agent.md
-
-exclude_docs: |
-  .git/
-  .github/
-  *.txt
-  *.js
-  *.xml
