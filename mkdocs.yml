@@ -1,0 +1,164 @@
+site_name: System Prompts Leaks
+site_description: Collection of system prompts from various AI models
+site_url: https://asgeirtj.github.io/system_prompts_leaks
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - admonition
+  - pymdownx.details
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+docs_dir: .
+
+nav:
+  - Home: readme.md
+  - Anthropic:
+    - Overview: Anthropic/readme.md
+    - Claude 4.5 Sonnet: Anthropic/claude-4.5-sonnet.md
+    - Claude 4.1 Opus Thinking: Anthropic/claude-4.1-opus-thinking.md
+    - Claude Sonnet 4: Anthropic/claude-sonnet-4.md
+    - Claude Code: Anthropic/claude-code.md
+    - Claude Code (2025-11-1): Anthropic/claude-code-2025-11-1.md
+    - Claude Code Plan Mode: Anthropic/claude-code-plan-mode.md
+    - Claude Code CLI Tools: Anthropic/calude_code_cli_tools.md
+    - Claude in Chrome: Anthropic/claude-in-chrome.md
+    - Claude 3.7 Sonnet: Anthropic/claude-3.7-sonnet-full-system-message-humanreadable.md
+    - Claude 3.7 with Tools: Anthropic/claude-3.7-sonnet-w-tools.md
+    - Claude.ai Injections: Anthropic/claude.ai-injections.md
+    - Claude AI Memory: Anthropic/claude-ai-memory-system.md
+    - Claude Works: Anthropic/claude_works.md
+    - End Conversation Tool: Anthropic/end-conversation-tool.md
+    - Past Chats Tools: Anthropic/past_chats_tools.md
+    - File Formats:
+      - PDF: Anthropic/pdf.md
+      - DOCX: Anthropic/docx.md
+      - XLSX: Anthropic/xlsx.md
+      - PPTX: Anthropic/pptx.md
+    - Old:
+      - Claude 3.7 Full: Anthropic/old/claude-3.7-full-system-message-with-all-tools.md
+  - OpenAI:
+    - GPT-5:
+      - GPT-5 Agent Mode: OpenAI/ChatGPT-GPT-5-Agent-mode-System-Prompt.md
+      - GPT-5 Thinking: OpenAI/gpt-5-thinking.md
+      - GPT-5 Cynic Personality: OpenAI/gpt-5-cynic-personality.md
+      - GPT-5 Listener Personality: OpenAI/gpt-5-listener-personality.md
+      - GPT-5 Robot Personality: OpenAI/gpt-5-robot-personality.md
+      - GPT-5 Nerdy Personality: OpenAI/gpt-5-nerdy-personality.md
+    - GPT-5.1:
+      - Default: OpenAI/gpt-5.1-default.md
+      - Candid: OpenAI/gpt-5.1-candid.md
+      - Efficient: OpenAI/gpt-5.1-efficient.md
+      - Friendly: OpenAI/gpt-5.1-friendly.md
+      - Cynical: OpenAI/gpt-5.1-cynical.md
+      - Professional: OpenAI/gpt-5.1-professional.md
+      - Nerdy: OpenAI/gpt-5.1-nerdy.md
+      - Quirky: OpenAI/gpt-5.1-quirky.md
+    - GPT-5.2:
+      - Thinking: OpenAI/gpt-5.2-thinking.md
+    - GPT-4.5: OpenAI/GPT-4.5.md
+    - GPT-4.1: OpenAI/GPT-4.1.md
+    - GPT-4.1 Mini: OpenAI/GPT-4.1-mini.md
+    - GPT-4o: OpenAI/GPT-4o.md
+    - GPT-4o WhatsApp: OpenAI/GPT-4o-WhatsApp.md
+    - GPT-4o Legacy Voice: OpenAI/GPT-4o-legacy-voice-mode.md
+    - GPT-4o Advanced Voice: OpenAI/GPT-4o-advanced-voice-mode.md
+    - GPT-4o New Personality: OpenAI/4o-2025-09-03-new-personality.md
+    - O3: OpenAI/o3.md
+    - O4-Mini: OpenAI/o4-mini.md
+    - O4-Mini High: OpenAI/o4-mini-high.md
+    - Codex: OpenAI/Codex.md
+    - Codex CLI: OpenAI/codex-cli.md
+    - ChatGPT Atlas: OpenAI/chatgpt-atlas.md
+    - Study and Learn: OpenAI/Study and learn.md
+    - Image Safety Policies: OpenAI/Image safety policies.md
+    - Tools:
+      - Advanced Memory: OpenAI/tool-advanced-memory.md
+      - Memory Bio: OpenAI/tool-memory-bio.md
+      - Canvas: OpenAI/tool-canvas-canmore.md
+      - Create Image: OpenAI/tool-create-image-image_gen.md
+      - Deep Research: OpenAI/tool-deep-research.md
+      - File Search: OpenAI/tool-file_search.md
+      - Python: OpenAI/tool-python.md
+      - Python Code: OpenAI/tool-python-code.md
+      - Web Search: OpenAI/tool-web-search.md
+    - Prompts:
+      - Automation Context: OpenAI/prompt-automation-context.md
+      - Image Safety: OpenAI/prompt-image-safety-policies.md
+    - API:
+      - Overview: OpenAI/API/readme.md
+      - GPT-5 Reasoning High: OpenAI/API/gpt-5-reasoning-effort-high-API-NOT-CHATGPT.com.md
+      - O3 High: OpenAI/API/o3-high-api.md
+      - O3 Medium: OpenAI/API/o3-medium-api.md
+      - O3 Low: OpenAI/API/o3-low-api.md
+      - O4-Mini High: OpenAI/API/o4-mini-high.md
+      - O4-Mini Medium: OpenAI/API/o4-mini-medium-api.md
+      - O4-Mini Low: OpenAI/API/o4-mini-low-api.md
+    - Old:
+      - O4-Mini: OpenAI/Old/chatgpt.com-o4-mini.md
+  - Google:
+    - Gemini 3 Pro: Google/gemini-3-pro.md
+    - Gemini 3 Flash: Google/gemini-3-flash.md
+    - Gemini 2.5 Pro Webapp: Google/gemini-2.5-pro-webapp.md
+    - Gemini 2.5 Pro Guided Learning: Google/gemini-2.5-pro-guided-learning.md
+    - Gemini 2.5 Flash Image Preview: Google/gemini-2.5-flash-image-preview.md
+    - Gemini 2.0 Flash Webapp: Google/gemini-2.0-flash-webapp.md
+    - Gemini CLI: Google/Gemini-cli system prompt.md
+    - Gemini Diffusion: Google/gemini-diffusion.md
+    - Gemini Workspace: Google/gemini-workspace.md
+    - Google AI Studios: Google/google-ai-studios.md
+    - NotebookLM Chat: Google/NotebookLM-chat.md
+  - xAI:
+    - Grok 4.1 Beta: xAI/grok-4.1-beta.md
+    - Grok 4: xAI/grok-4.md
+    - Grok 3: xAI/grok-3.md
+    - Grok Personas: xAI/grok-personas.md
+  - Perplexity:
+    - Comet Browser Assistant: Perplexity/comet-browser-assistant.md
+    - Voice Assistant: Perplexity/voice-assistant.md
+  - Proton:
+    - Lumo (2025-8-26): Proton/lumo-2025-8-26.md
+    - Luma: Proton/Luma.md
+  - Misc:
+    - Confer: Misc/Confer.md
+    - Fellou Browser: Misc/Fellou-browser.md
+    - Kagi Assistant: Misc/Kagi Assistant.md
+    - Le Chat: Misc/Le-Chat.md
+    - Notion AI: Misc/Notion AI.md
+    - Raycast AI: Misc/Raycast-AI.md
+    - Sesame AI Maya: Misc/Sesame-AI-Maya.md
+    - Warp 2.0 Agent: Misc/Warp-2.0-agent.md
+
+exclude_docs: |
+  .git/
+  .github/
+  *.txt
+  *.js
+  *.xml
